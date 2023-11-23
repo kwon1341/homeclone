@@ -21,12 +21,12 @@ export default {
 .videoSection{
   display: flex;
   align-items: center;
-  position: fixed;
+  position: relative;
   overflow: hidden;
   min-width: 290px;
 }
 .mainVideo {
-  position: relative;
+  position: absolute;
   width: 100%;
   height: 100%;
   object-fit: cover;

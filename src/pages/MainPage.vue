@@ -1,21 +1,24 @@
 <template>
   <div :class="$style.homeWrap">
-    <videoSection/>
+    <main :class="$style.main">
+    <videoSection :class="$style.section"/>
     <div class="section">
       <div>
-        컨텐츠 작성
+        컨텐츠 작성 다음섹션1
       </div>
     </div>
     <div class="section">
       <div>
-        컨텐츠 작성
+        컨텐츠 작성 다음섹션2
       </div>
     </div>
     <div class="section">
       <div>
-        컨텐츠 작성
+        컨텐츠 작성 다음섹션3
       </div>
     </div>
+
+    </main>
   </div>
 </template>
 
@@ -33,4 +36,12 @@ export default {
 .homeWrap{
   color: #eeeeee;
 }
+.main{
+  flex: 1;
+}
+.main > section {
+  width: 100%;
+  height: 100vh;
+}
+
 </style>
