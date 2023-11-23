@@ -8,11 +8,12 @@ const router = new VueRouter({
     routes:[
         {
             path: '/',
-            redirect: '/',
+            redirect: '/home',
         },
         {
-
-        }
+            path: '/home',
+            component: () => import('@/pages/mainPage.vue'),
+        },
     ]
 })
 

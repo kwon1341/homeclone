@@ -10,4 +10,5 @@ export default {
 </script>
 
 <style>
+@import '@/style/reset.css';
 </style>
