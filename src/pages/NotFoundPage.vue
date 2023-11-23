@@ -1,19 +1,15 @@
 <template>
   <div>
-
+    <span>Page Not Found</span>
   </div>
 </template>
 
 <script>
 export default {
-  setup() {
-
-
-    return {}
-  }
+  name: "NotFoundPage"
 }
 </script>
 
-<style lang="scss" scoped>
+<style scoped>
 
 </style>

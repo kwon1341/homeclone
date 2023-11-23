@@ -1,5 +1,5 @@
 import Vue from 'vue';
 
-import mainPage from "@/pages/mainPage.vue";
+import MainPage from "@/pages/MainPage.vue";
 
-Vue.component('mainPage', mainPage);
+Vue.component('MainPage', MainPage);

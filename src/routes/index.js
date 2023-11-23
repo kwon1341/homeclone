@@ -12,7 +12,7 @@ const router = new VueRouter({
         },
         {
             path: '/home',
-            component: () => import('@/pages/mainPage.vue'),
+            component: () => import('@/pages/MainPage.vue'),
         },
     ]
 })
