@@ -1,5 +1,6 @@
 <template>
-  <div class="fullpage">
+  <div :class="$style.homeWrap">
+    <videoSection/>
     <div class="section">
       <div>
         컨텐츠 작성
@@ -19,13 +20,17 @@
 </template>
 
 <script>
+import videoSection from "@/layout/mainPage/videoSection.vue";
+
 export default {
-  setup() {
-    return {}
+  components:{
+    videoSection
   }
 }
 </script>
 
 <style module>
-
+.homeWrap{
+  color: #eeeeee;
+}
 </style>
