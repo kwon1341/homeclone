@@ -177,7 +177,6 @@ export default {
 }
 .aside > ul {
   display: flex;
-  //align-items: end;
   flex-direction: column;
   row-gap: 30px;
   max-width: 1680px;
@@ -186,9 +185,6 @@ export default {
   width: 100%;
   height: 100%;
   //margin: 0 auto;
-}
-.aside > ul > li {
-  gap: 20px;
 }
 /* 슬라이드 인 애니메이션 */
 @keyframes slideIn {
@@ -199,7 +195,6 @@ export default {
     transform: translateX(0);
   }
 }
-
 /* 슬라이드 아웃 애니메이션 */
 @keyframes slideOut {
   from {
