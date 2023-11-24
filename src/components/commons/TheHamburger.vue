@@ -1,6 +1,6 @@
 <template>
   <div>
-    <a class="menu-trigger" href="#">
+    <a :class="['menu-trigger', $style.active1]" href="#">
       <span></span>
       <span></span>
       <span></span>
@@ -10,6 +10,7 @@
 
 <script>
 export default {
+  name: 'TheHamburger'
 }
 </script>
 

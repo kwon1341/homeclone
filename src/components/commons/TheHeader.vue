@@ -70,7 +70,7 @@ export default {
   display: flex;
   justify-content: space-between;
   font-size: 1.6rem;
-  gap: 2rem;
+  //gap: 2rem;
 }
 .btn{
   //color: #a2a2a4;

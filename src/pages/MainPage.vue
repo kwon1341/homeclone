@@ -2,17 +2,17 @@
   <div :class="$style.homeWrap">
     <main :class="$style.main">
     <videoSection :class="$style.section"/>
-    <div class="section">
+    <div :class="$style.section">
       <div>
         컨텐츠 작성 다음섹션1
       </div>
     </div>
-    <div class="section">
+    <div :class="$style.section">
       <div>
         컨텐츠 작성 다음섹션2
       </div>
     </div>
-    <div class="section">
+    <div :class="$style.section">
       <div>
         컨텐츠 작성 다음섹션3
       </div>
