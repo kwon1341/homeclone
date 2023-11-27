@@ -1,28 +1,41 @@
 <template>
   <div :class="$style.homeWrap">
     <main :class="$style.main">
-    <videoSection :class="$style.section"/>
-    <div :class="$style.section">
+    <videoSection :class="$style.section" id="section1"/>
+    <div :class="$style.section" id="section2">
       <div>
         컨텐츠 작성 다음섹션1
       </div>
     </div>
-    <div :class="$style.section">
+    <div :class="$style.section" id="section3">
       <div>
         컨텐츠 작성 다음섹션2
       </div>
     </div>
-    <div :class="$style.section">
-      <div>
-        컨텐츠 작성 다음섹션3
+      <div :class="$style.section" id="section4">
+        <div>
+          컨텐츠 작성 다음섹션3
+        </div>
       </div>
-    </div>
-      <swiper :options="swiperOptions">
-        <swiper-slide v-for="slide in slides" :key="slide">
-          {{ slide }}
-        </swiper-slide>
-        <!-- 추가 기능을 사용하려면 여기에 <div class="swiper-pagination"></div> 등을 추가하세요. -->
-      </swiper>
+      <div :class="$style.section" id="section5">
+        <div>
+          컨텐츠 작성 다음섹션4
+        </div>
+      </div>
+      <div :class="$style.section" id="section6">
+        <div>
+          컨텐츠 작성 다음섹션5
+        </div>
+      </div>
+    <!--  네이게이션 캐러셀  -->
+      <div :class="$style.navCarousel">
+        <button @click="scrollToSection('section1')">비디오</button>
+        <button @click="scrollToSection('section2')">섹션 1</button>
+        <button @click="scrollToSection('section3')">섹션 2</button>
+        <button @click="scrollToSection('section4')">섹션 3</button>
+        <button @click="scrollToSection('section5')">섹션 4</button>
+        <button @click="scrollToSection('section6')">섹션 5</button>
+      </div>
     </main>
   </div>
 </template>
@@ -36,21 +49,24 @@ export default {
   },
   data() {
     return {
-      slides: [1, 2, 3, 4, 5],
-      swiperOptions: {
-        // Swiper 옵션을 여기에 설정하세요.
-        loop: true,
+      swiperOptions:{
+        direction: 'vertical',
+        mousewheel: true,
         pagination: {
           el: '.swiper-pagination',
           clickable: true,
         },
-        navigation: {
-          nextEl: '.swiper-button-next',
-          prevEl: '.swiper-button-prev',
-        },
       },
     }
-  }
+  },
+  methods:{
+    scrollToSection(sectionId) {
+      const section = document.getElementById(sectionId);
+      if (section) {
+        section.scrollIntoView({ behavior: 'smooth' });
+      }
+    }
+  },
 }
 </script>
 
@@ -60,33 +76,20 @@ export default {
 }
 .main{
   flex: 1;
+  position: relative;
 }
 .section {
   width: 100%;
   height: 100vh;
 }
-.swiper-container {
-  width: 100%;
-  height: 100%;
-}
-
-.swiper-slide {
-  text-align: center;
-  font-size: 18px;
-  background: #fff;
-
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: -webkit-flex;
+.navCarousel {
+  position: fixed;
+  top: 50%;
+  right: 2rem;
+  transform: translateY(-50%);
   display: flex;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  -webkit-justify-content: center;
-  justify-content: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  -webkit-align-items: center;
-  align-items: center;
+  flex-direction: column;
+  gap: 1px;
 }
 
 </style>
