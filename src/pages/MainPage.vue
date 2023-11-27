@@ -1,28 +1,28 @@
 <template>
   <div :class="$style.homeWrap">
     <main :class="$style.main">
-    <videoSection :class="$style.section" id="section1"/>
-    <div :class="$style.section" id="section2">
+    <videoSection id="section1" :class="$style.section"/>
+    <div id="section2" :class="$style.section">
       <div>
         컨텐츠 작성 다음섹션1
       </div>
     </div>
-    <div :class="$style.section" id="section3">
+    <div id="section3" :class="$style.section">
       <div>
         컨텐츠 작성 다음섹션2
       </div>
     </div>
-      <div :class="$style.section" id="section4">
+      <div id="section4" :class="$style.section">
         <div>
           컨텐츠 작성 다음섹션3
         </div>
       </div>
-      <div :class="$style.section" id="section5">
+      <div id="section5" :class="$style.section">
         <div>
           컨텐츠 작성 다음섹션4
         </div>
       </div>
-      <div :class="$style.section" id="section6">
+      <div id="section6" :class="$style.section">
         <div>
           컨텐츠 작성 다음섹션5
         </div>

@@ -111,7 +111,7 @@ export default {
   color: #eeeeee;
   background-color: transparent;
   align-items: center;
-  padding: 1rem 2rem;
+  padding: 1rem 3rem;
   border-bottom: 1px solid rgba(255, 255, 255, .2);
 }
 .header{
