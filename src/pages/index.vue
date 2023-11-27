@@ -23,7 +23,7 @@ export default {
   white-space: nowrap;
   overflow-x: auto;
   background-image: url("@/assets/pc_newbg.png");
-  background-size: 100% 100%;
+  //background-size: 100% 100%;
   background-repeat: no-repeat;
   background-position: 0 60%;
 }
