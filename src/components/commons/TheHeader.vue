@@ -3,7 +3,7 @@
     <div :class="$style.headerWrap">
       <div :class="$style.header">
         <div :class="$style.logo">
-          <img src="@/assets/pc_logo.png" alt="logo"/>
+          <img alt="logo" src="@/assets/pc_logo.png"/>
         </div>
         <div :class="$style.menuBtn">
           <div :class="$style.btnWrap">
@@ -11,8 +11,8 @@
           </div>
         </div>
       </div>
-      <aside :class="$style.aside" v-show="isAsideVisible">
-        <ul :class="$style.asideUl">
+      <aside v-show="isAsideVisible" :class="$style.aside">
+        <ul>
           <li>
             <h3>
               Company
@@ -77,15 +77,11 @@
 
 
 export default {
-  components:{
-  },
+
   data(){
     return{
       isAsideVisible: false,
     };
-  },
-  computed:{
-
   },
   methods:{
     toggleAside(){
@@ -146,22 +142,11 @@ export default {
   position: relative;
   z-index: 200;
   color: brown;
-  //gap: 2rem;
-}
-.btn{
-  position: fixed;
-  //color: #a2a2a4;
-}
-.btn:hover{
-  color: #fff;
-  transition: all ease 0.3s;
 }
 .aside{
-  //display: none;
   position: fixed;
   top: 0;
   right: 0;
-  //inset: 0;
   z-index: 100;
   width: 20%;
   min-width: 300px;
@@ -170,10 +155,6 @@ export default {
   color: #000;
   /* 애니메이션 초기 상태 설정 */
   animation: slideIn 0.45s backwards;
-}
-/* 활성화 상태에서의 애니메이션 변경 */
-.asideHidden {
-  animation: slideOut 0.45s forwards;
 }
 .aside > ul {
   display: flex;

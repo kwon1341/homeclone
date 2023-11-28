@@ -2,16 +2,16 @@
   <div :class="$style.homeWrap">
     <main :class="$style.main">
     <videoSection id="section1" :class="$style.section"/>
-    <div id="section2" :class="$style.section">
-      <div>
-        컨텐츠 작성 다음섹션1
+      <div id="section2" :class="$style.section">
+        <div>
+          컨텐츠 작성 다음섹션1
+        </div>
       </div>
-    </div>
-    <div id="section3" :class="$style.section">
-      <div>
-        컨텐츠 작성 다음섹션2
+      <div id="section3" :class="$style.section">
+        <div>
+          컨텐츠 작성 다음섹션2
+        </div>
       </div>
-    </div>
       <div id="section4" :class="$style.section">
         <div>
           컨텐츠 작성 다음섹션3
@@ -89,7 +89,11 @@ export default {
   transform: translateY(-50%);
   display: flex;
   flex-direction: column;
-  gap: 1px;
+  gap: 2px;
+  transition: all 2s ease;
+}
+.navCarousel > button:hover{
+  font-weight: 700;
 }
 
 </style>

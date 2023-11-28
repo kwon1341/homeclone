@@ -2,7 +2,6 @@
   <div :class="$style.mainWrap">
     <main :class="$style.main">
       <TheHeader/>
-<!--      <TheNavigation/>-->
       <router-view/>
     </main>
   </div>
