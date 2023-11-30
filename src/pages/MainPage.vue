@@ -78,8 +78,6 @@ export default {
 .section {
   width: 100%;
   height: 100vh;
-  display: flex;
-  justify-content: center;
 }
 .navCarousel {
   position: fixed;

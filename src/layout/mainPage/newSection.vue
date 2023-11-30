@@ -1,7 +1,9 @@
 <template>
   <div :class="$style.newWrap">
     <section :class="$style.section">
-      <h1>NEWS</h1>
+      <div :class="$style.sectionTitle">
+        <h1>NEWS</h1>
+      </div>
     </section>
     <section :class="$style.section">
       <div :class="$style.imgWrap">
@@ -35,16 +37,16 @@ export default {
   max-width: 1200px;
   width: 100%;
 }
-.section > h1{
+.sectionTitle > h1{
   color: #fff;
-  margin: 170px 0 20px 0;
+  margin: 10.5rem 0 1rem 0;
   position: relative;
   font-size: 2.5rem;
   letter-spacing: 0.15em;
-  padding-left: 16px;
+  padding-left: 1rem;
   line-height: 1;
 }
-.section > h1::after{
+.sectionTitle > h1::after{
   position: absolute;
   content: " ";
   top: 10%;
