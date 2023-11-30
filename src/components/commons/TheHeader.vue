@@ -179,6 +179,7 @@ export default {
 }
 .ul > li > h3{
   font-size: 24px;
+  font-weight: 700;
 }
 .ul > li > ul{
   //padding-left: 6px;

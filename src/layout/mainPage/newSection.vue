@@ -27,21 +27,31 @@ export default {
 <style module>
 .newWrap{
   width: 100%;
-  height: 100%;
+  height: 100vh;
+  display: block;
 }
 .section{
-  //display: flex;
-  //justify-content: center;
-  //align-items: center;
+  margin: 0 auto;
+  max-width: 1200px;
+  width: 100%;
 }
 .section > h1{
   color: #fff;
   margin: 0;
   position: relative;
-  font-size: 2.5rem;
-  letter-spacing: .15em;
-  padding-left: 22px;
+  font-size: 2.3rem;
+  letter-spacing: 0.15em;
+  padding-left: 16px;
   line-height: 1;
+}
+.section > h1::after{
+  position: absolute;
+  content: " ";
+  top: 10%;
+  left: 0;
+  height: 85%;
+  width: 2px;
+  background: #ec6501;
 }
 .imgWrap{
   display: grid;
@@ -49,7 +59,13 @@ export default {
   grid-gap: 6px;
 }
 .imgWrap > img {
-  max-width: 1200px;
+  //position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  border: 0;
+  overflow: hidden;
 }
 
 </style>
