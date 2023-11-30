@@ -163,7 +163,6 @@ export default {
   height: 100%;
   background-color: #ffffff;
   color: #000;
-  /* 애니메이션 초기 상태 설정 */
   animation: slideIn 0.45s backwards;
 }
 .ul {

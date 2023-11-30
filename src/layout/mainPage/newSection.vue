@@ -7,10 +7,34 @@
     </section>
     <section :class="$style.section">
       <div :class="$style.imgWrap">
-        <img :class="$style.img" src="@/assets/sample/01.png"/>
-        <img :class="$style.img" src="@/assets/sample/02.jpg"/>
-        <img :class="$style.img" src="@/assets/sample/03.png"/>
-        <img :class="$style.img" src="@/assets/sample/04.png"/>
+        <a :class="$style.imgAnchor">
+          <div :class="$style.imgCard">
+            <h1>OBB Lunching Show</h1>
+            <h4>123123</h4>
+          </div>
+          <img :class="$style.img" src="@/assets/sample/01.png"/>
+        </a>
+        <a :class="$style.imgAnchor">
+          <div :class="$style.imgCard">
+            <h1>OBB Lunching Show</h1>
+            <h4>123123</h4>
+          </div>
+          <img :class="$style.img" src="@/assets/sample/02.jpg"/>
+        </a>
+        <a :class="$style.imgAnchor">
+          <div :class="$style.imgCard">
+            <h1>OBB Lunching Show</h1>
+            <h4>123123</h4>
+          </div>
+          <img :class="$style.img" src="@/assets/sample/03.png"/>
+        </a>
+        <a :class="$style.imgAnchor">
+          <div :class="$style.imgCard">
+            <h1>OBB Lunching Show</h1>
+            <h4>123123</h4>
+          </div>
+          <img :class="$style.img" src="@/assets/sample/04.png"/>
+        </a>
       </div>
     </section>
   </div>
@@ -39,7 +63,7 @@ export default {
 }
 .sectionTitle > h1{
   color: #fff;
-  margin: 12.5rem 0 1rem 0;
+  margin: 16.5rem 0 1.25rem 0;
   position: relative;
   font-size: 2.5rem;
   letter-spacing: 0.15em;
@@ -56,11 +80,12 @@ export default {
   background: #ec6501;
 }
 .imgWrap{
+  position: relative;
   display: grid;
   grid-template-columns: 2fr 2fr;
   grid-gap: 6px;
 }
-.imgWrap > img {
+.imgWrap > a > img {
   //position: absolute;
   width: 100%;
   height: 100%;
@@ -68,6 +93,21 @@ export default {
   top: 0;
   border: 0;
   overflow: hidden;
+}
+.imgAnchor{
+  transition: ease all 0.5s;
+}
+.imgCard{
+  position: absolute;
+  z-index: 2;
+  left: 0;
+  bottom: 0;
+  padding: 0 25px 20px 30px;
+  width: 100%;
+}
+.imgCard > h2{
+  width: 100%;
+  left: 0;
 }
 
 </style>
