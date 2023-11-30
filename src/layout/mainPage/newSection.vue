@@ -39,7 +39,7 @@ export default {
 }
 .sectionTitle > h1{
   color: #fff;
-  margin: 10.5rem 0 1rem 0;
+  margin: 12.5rem 0 1rem 0;
   position: relative;
   font-size: 2.5rem;
   letter-spacing: 0.15em;
@@ -51,7 +51,7 @@ export default {
   content: " ";
   top: 10%;
   left: 0;
-  height: 85%;
+  height: 90%;
   width: 2px;
   background: #ec6501;
 }
