@@ -18,7 +18,7 @@ export default {
   display: flex;
   width: 100%;
   height: 100%;
-  margin: 0 auto;
+  //margin: 0 auto;
   white-space: nowrap;
   overflow-x: auto;
   background-image: url("@/assets/pc_newbg.png");
@@ -29,8 +29,7 @@ export default {
 .main {
   width: 100%;
   height: 100%;
-  margin-left: auto;
-  margin-right: auto;
+  //margin: 0 auto;
   //padding-top: 5.8rem;
 }
 

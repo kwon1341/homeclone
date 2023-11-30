@@ -7,13 +7,20 @@
         </div>
         <div :class="$style.menuBtn">
           <div :class="$style.btnWrap">
-            <button @click="toggleAside">{{ isAsideVisible ? 'X' : 'O' }}</button>
+            <button
+                v-if="isAsideVisible"
+                :class="$style.btn"
+                @click="toggleAside"><img src="@/assets/pc_close.png"/></button>
+            <button
+                v-else
+                :class="$style.btn"
+                @click="toggleAside"><img src="@/assets/pc_hamburger.png"/></button>
           </div>
         </div>
       </div>
       <aside v-show="isAsideVisible" :class="$style.aside">
-        <ul>
-          <li>
+        <ul :class="$style.ul">
+          <li >
             <h3>
               Company
             </h3>
@@ -100,7 +107,7 @@ export default {
   z-index: 10;
 }
 .headerWrap{
-  position: fixed;
+  position: absolute;
   display: flex;
   width: 100%;
   min-height: 5rem;
@@ -135,6 +142,9 @@ export default {
   display: flex;
   justify-content: space-between;
 }
+.btn{
+  width: 45px;
+}
 .btnWrap{
   display: flex;
   justify-content: space-between;
@@ -156,7 +166,7 @@ export default {
   /* 애니메이션 초기 상태 설정 */
   animation: slideIn 0.45s backwards;
 }
-.aside > ul {
+.ul {
   display: flex;
   flex-direction: column;
   row-gap: 30px;
@@ -167,6 +177,14 @@ export default {
   height: 100%;
   //margin: 0 auto;
 }
+.ul > li > h3{
+  font-size: 24px;
+}
+.ul > li > ul{
+  //padding-left: 6px;
+  line-height: 25px;
+}
+
 /* 슬라이드 인 애니메이션 */
 @keyframes slideIn {
   from {
