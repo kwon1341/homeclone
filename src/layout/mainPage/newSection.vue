@@ -37,9 +37,9 @@ export default {
 }
 .section > h1{
   color: #fff;
-  margin: 0;
+  margin: 170px 0 20px 0;
   position: relative;
-  font-size: 2.3rem;
+  font-size: 2.5rem;
   letter-spacing: 0.15em;
   padding-left: 16px;
   line-height: 1;
