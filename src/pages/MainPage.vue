@@ -3,26 +3,17 @@
     <main :class="$style.main">
       <videoSection id="section1" :class="$style.section"/>
       <newSection id="section2" :class="$style.section"/>
-      <div id="section3" :class="$style.section">
-        <div>
-          컨텐츠 작성 다음섹션2
-        </div>
-      </div>
-      <div id="section4" :class="$style.section">
-        <div>
-          컨텐츠 작성 다음섹션3
-        </div>
-      </div>
-      <div id="section5" :class="$style.section">
-        <div>
-          컨텐츠 작성 다음섹션4
-        </div>
-      </div>
+      <prSection id="section3" :class="$style.section"/>
+      <serviceSection id="section4" :class="$style.section"/>
+      <whySection id="section5" :class="$style.section"/>
+
 <!--      <div id="section6" :class="$style.section">-->
 <!--        <div>-->
 <!--          컨텐츠 작성 다음섹션5-->
 <!--        </div>-->
 <!--      </div>-->
+
+
     <!--  네이게이션 캐러셀  -->
 <!--      <div :class="$style.navCarousel">-->
 <!--        <button @click="scrollToSection('section1')">비디오</button>-->
@@ -39,10 +30,13 @@
 <script>
 import videoSection from "@/layout/mainPage/videoSection.vue";
 import newSection from "@/layout/mainPage/newSection.vue";
+import prSection from "@/layout/mainPage/prSection.vue";
+import serviceSection from "@/layout/mainPage/serviceSection.vue";
+import whySection from "@/layout/mainPage/whySection.vue";
 
 export default {
   components:{
-    videoSection,newSection
+    videoSection,newSection,prSection,serviceSection,whySection
   },
   data() {
     return {
