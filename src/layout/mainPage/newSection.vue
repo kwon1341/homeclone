@@ -16,21 +16,21 @@
         </a>
         <a :class="$style.imgAnchor">
           <div :class="$style.imgCard">
-            <h1>OBB Lunching Show</h1>
+            <h1>OBB Lunching Show2</h1>
             <h4>123123</h4>
           </div>
           <img :class="$style.img" src="@/assets/sample/02.jpg"/>
         </a>
         <a :class="$style.imgAnchor">
           <div :class="$style.imgCard">
-            <h1>OBB Lunching Show</h1>
+            <h1>OBB Lunching Show3</h1>
             <h4>123123</h4>
           </div>
           <img :class="$style.img" src="@/assets/sample/03.png"/>
         </a>
         <a :class="$style.imgAnchor">
           <div :class="$style.imgCard">
-            <h1>OBB Lunching Show</h1>
+            <h1>OBB Lunching Show4</h1>
             <h4>123123</h4>
           </div>
           <img :class="$style.img" src="@/assets/sample/04.png"/>
@@ -99,15 +99,12 @@ export default {
 }
 .imgCard{
   position: absolute;
-  z-index: 2;
-  left: 0;
-  bottom: 0;
+  //z-index: 2;
+  //left: 0;
+  //top: auto;
+  //bottom: auto;
   padding: 0 25px 20px 30px;
-  width: 100%;
-}
-.imgCard > h2{
-  width: 100%;
-  left: 0;
+  //width: 100%;
 }
 
 </style>
