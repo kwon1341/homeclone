@@ -64,7 +64,7 @@ export default {
 .sectionTitle > h1{
   color: #fff;
   font-weight: 600;
-  margin: 16.5rem 0 1.25rem 0;
+  margin: 10.5rem 0 0.875rem 0;
   position: relative;
   font-size: 2.875rem;
   letter-spacing: 0.15em;
@@ -107,7 +107,7 @@ export default {
   left: 0;
   right: 0;
   bottom: 0;
-  background: rgba(0, 0, 0, 0.25);
+  background: rgba(0, 0, 0, 0.18);
   transition: opacity 0.5s ease;
   opacity: 1;
   z-index: 1;

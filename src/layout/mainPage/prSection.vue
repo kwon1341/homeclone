@@ -31,10 +31,10 @@ export default {
 }
 .sectionTitle > h1{
   color: #fff;
-  font-weight: 700;
-  margin: 12.5rem 0 1rem 0;
+  font-weight: 600;
+  margin-bottom: .875rem;
   position: relative;
-  font-size: 2.5rem;
+  font-size: 2.875rem;
   letter-spacing: 0.15em;
   padding-left: 1rem;
   line-height: 1;
@@ -45,7 +45,7 @@ export default {
   top: 10%;
   left: 0;
   height: 90%;
-  width: 2px;
+  width: 3px;
   background: #fdda3f;
 }
 </style>
