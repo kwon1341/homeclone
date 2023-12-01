@@ -10,28 +10,28 @@
         <a :class="$style.imgAnchor">
           <div :class="$style.imgCard">
             <h1>OBB Lunching Show</h1>
-            <h4>123123</h4>
+            <h4>Lunching show description</h4>
           </div>
           <img :class="$style.img" src="@/assets/sample/01.png"/>
         </a>
         <a :class="$style.imgAnchor">
           <div :class="$style.imgCard">
             <h1>OBB Lunching Show2</h1>
-            <h4>123123</h4>
+            <h4>Lunching show description</h4>
           </div>
           <img :class="$style.img" src="@/assets/sample/02.jpg"/>
         </a>
         <a :class="$style.imgAnchor">
           <div :class="$style.imgCard">
             <h1>OBB Lunching Show3</h1>
-            <h4>123123</h4>
+            <h4>Lunching show description</h4>
           </div>
           <img :class="$style.img" src="@/assets/sample/03.png"/>
         </a>
         <a :class="$style.imgAnchor">
           <div :class="$style.imgCard">
             <h1>OBB Lunching Show4</h1>
-            <h4>123123</h4>
+            <h4>Lunching show description</h4>
           </div>
           <img :class="$style.img" src="@/assets/sample/04.png"/>
         </a>
@@ -63,9 +63,10 @@ export default {
 }
 .sectionTitle > h1{
   color: #fff;
+  font-weight: 600;
   margin: 16.5rem 0 1.25rem 0;
   position: relative;
-  font-size: 2.5rem;
+  font-size: 2.875rem;
   letter-spacing: 0.15em;
   padding-left: 1rem;
   line-height: 1;
@@ -76,17 +77,17 @@ export default {
   top: 10%;
   left: 0;
   height: 90%;
-  width: 2px;
+  width: 3px;
   background: #ec6501;
 }
 .imgWrap{
   position: relative;
   display: grid;
   grid-template-columns: 2fr 2fr;
-  grid-gap: 6px;
+  grid-gap: 7px;
 }
 .imgWrap > a > img {
-  //position: absolute;
+  display: block;
   width: 100%;
   height: 100%;
   left: 0;
@@ -95,16 +96,33 @@ export default {
   overflow: hidden;
 }
 .imgAnchor{
+  position: relative;
+  display: block;
   transition: ease all 0.5s;
+}
+.imgAnchor::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.25);
+  transition: opacity 0.5s ease;
+  opacity: 1;
+  z-index: 1;
+}
+.imgAnchor:hover::after {
+  opacity: 0;
 }
 .imgCard{
   position: absolute;
-  //z-index: 2;
-  //left: 0;
-  //top: auto;
-  //bottom: auto;
+  z-index: 2;
+  left: 0;
+  bottom: 0;
   padding: 0 25px 20px 30px;
-  //width: 100%;
 }
-
+.imgCard > h1 {
+  font-size: 2rem;
+}
 </style>

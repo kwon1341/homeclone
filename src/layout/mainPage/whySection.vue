@@ -31,6 +31,7 @@ export default {
 }
 .sectionTitle > h1{
   color: #fff;
+  font-weight: 700;
   margin: 12.5rem 0 1rem 0;
   position: relative;
   font-size: 2.5rem;
