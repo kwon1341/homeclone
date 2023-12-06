@@ -7,17 +7,17 @@
         muted
         playsinline
         src="@/assets/main_video.mp4"
-    ></video>
+    />
     <div :class="$style.arrBox">
       <ul :class="$style.arrUl">
         <li :class="$style.arrLi">
-          <img src="@/assets/pc_bottomarrow.png"/>
+          <img :class="$style.arrow" src="@/assets/pc_bottomarrow.png"/>
         </li>
         <li :class="$style.arrLi">
-          <img src="@/assets/pc_bottomarrow.png"/>
+          <img :class="$style.arrow" src="@/assets/pc_bottomarrow.png"/>
         </li>
         <li :class="$style.arrLi">
-          <img src="@/assets/pc_bottomarrow.png"/>
+          <img :class="$style.arrow" src="@/assets/pc_bottomarrow.png"/>
         </li>
       </ul>
     </div>
@@ -55,8 +55,22 @@ export default {
   display: flex;
   flex-direction: column;
 }
+@keyframes fadein {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
 .arrUl:first-child{
   animation-delay: 0.3s;
+}
+.arrUl:last-child{
+  animation-delay: 0.6s;
 }
 .arrLi{
   margin-bottom: 1rem;
