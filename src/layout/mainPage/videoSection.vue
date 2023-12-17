@@ -37,7 +37,7 @@ export default {
   position: relative;
   overflow: hidden;
   min-width: 290px;
-  margin-bottom: 35rem;
+  /*margin-bottom: 35rem;*/
 }
 .mainVideo {
   position: absolute;

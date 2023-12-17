@@ -2,7 +2,8 @@
   <div :class="$style.sectionWrap">
     <section :class="$style.section">
       <div :class="$style.sectionTitle">
-        <h1>PR&INSIGHT</h1>
+        <h1>PR</h1>
+        <small>언론 속 틸론의 소식을 접해보세요.</small>
       </div>
     </section>
     <section :class="$style.section">
@@ -12,8 +13,10 @@
 
 <script>
 export default {
-  setup() {
-    return {}
+  data() {
+    return {
+
+    }
   }
 }
 </script>
@@ -22,30 +25,27 @@ export default {
 .sectionWrap{
   width: 100%;
   height: 100vh;
-  display: block;
+  display: flex;
+  margin: 0 auto;
+  max-width: 1320px;
+  padding: 0 1.25rem;
+  flex-direction: column;
+  justify-content: center;
 }
 .section{
-  margin: 0 auto;
-  max-width: 1200px;
   width: 100%;
+  padding-bottom: 2.25rem;
+}
+.sectionTitle{
+  font-weight: 600;
 }
 .sectionTitle > h1{
   color: #fff;
-  font-weight: 600;
-  margin-bottom: .875rem;
-  position: relative;
-  font-size: 2.875rem;
-  letter-spacing: 0.15em;
-  padding-left: 1rem;
+  font-size: 3.75rem;
   line-height: 1;
 }
-.sectionTitle > h1::after{
-  position: absolute;
-  content: " ";
-  top: 10%;
-  left: 0;
-  height: 90%;
-  width: 3px;
-  background: #fdda3f;
+.sectionTitle > small {
+  font-size: 1rem;
+  font-weight: 600;
 }
 </style>
