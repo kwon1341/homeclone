@@ -112,10 +112,10 @@ export default {
   width: 100%;
   min-height: 5rem;
   color: #eeeeee;
-  background-color: transparent;
+  background: rgba(87, 87, 87, 0.18);
+  backdrop-filter: blur(2px);
   align-items: center;
   padding: 1rem 5rem;
-  border-bottom: 1px solid rgba(255, 255, 255, .2);
 }
 .header{
   width: 100%;

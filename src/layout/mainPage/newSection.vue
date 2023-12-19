@@ -93,5 +93,11 @@ export default {
 .li > span{
   display: block;
   padding-top: 1.25rem;
+  overflow: hidden;
+  white-space: nowrap;
+  -webkit-line-clamp: 2;
+  text-overflow: ellipsis;
+  /*word-wrap: break-word;*/
+  /*word-break: break-all;*/
 }
 </style>
